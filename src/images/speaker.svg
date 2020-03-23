@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__speaker" width="15.487" height="17.609" viewBox="0 0 15.487 17.609">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="prefix__Group_7" data-name="Group 7" transform="translate(0 .657)">
+        <g id="prefix__Group_6" data-name="Group 6">
+            <path id="prefix__Path_46" d="M45.161 25.385l-5.835-5.835a1.547 1.547 0 00-2.377 1.96l-.008.041a10.8 10.8 0 01-2.962 5.534L31.3 29.761a1.546 1.546 0 000 2.188l1.459 1.459a1.546 1.546 0 002.188 0l.365-.365 2.555 2.557a1.547 1.547 0 002.188-2.188l-1.094-1.094.365-.365a1.546 1.546 0 000-2.188l-.248-.248a10.8 10.8 0 014.083-1.744l.041-.008a1.549 1.549 0 001.959-.188 1.549 1.549 0 000-2.192zM34.22 32.679a.516.516 0 01-.729 0l-1.459-1.459a.515.515 0 010-.729l2.553-2.553 2.188 2.188zm5.106 1.459a.516.516 0 01-.729.729l-2.553-2.553.729-.729zM37.5 30.856c.155-.155.387-.393.753-.705l.341.341a.515.515 0 010 .729l-.365.365zm.022-1.437l-2.232-2.232A11.811 11.811 0 0037.8 22.4l4.5 4.5a11.81 11.81 0 00-4.775 2.519zm6.907-2.575a.516.516 0 01-.729 0l-5.835-5.835a.516.516 0 01.729-.729l5.835 5.835a.516.516 0 01.003.729z" class="prefix__cls-1" data-name="Path 46" transform="translate(-30.849 -19.098)"/>
+        </g>
+    </g>
+    <g id="prefix__Group_9" data-name="Group 9" transform="translate(2.491 11.17)">
+        <g id="prefix__Group_8" data-name="Group 8">
+            <path id="prefix__Path_47" d="M104.876 324.913a.516.516 0 00-.729 0l-.729.729a.516.516 0 00.729.729l.729-.729a.516.516 0 000-.729z" class="prefix__cls-1" data-name="Path 47" transform="translate(-103.266 -324.762)"/>
+        </g>
+    </g>
+    <g id="prefix__Group_11" data-name="Group 11" transform="translate(10.33)">
+        <g id="prefix__Group_10" data-name="Group 10">
+            <path id="prefix__Path_48" d="M331.71 0a.516.516 0 00-.516.516v1.031a.516.516 0 001.032 0V.516A.516.516 0 00331.71 0z" class="prefix__cls-1" data-name="Path 48" transform="translate(-331.194)"/>
+        </g>
+    </g>
+    <g id="prefix__Group_13" data-name="Group 13" transform="translate(13.424 4.126)">
+        <g id="prefix__Group_12" data-name="Group 12">
+            <path id="prefix__Path_49" d="M422.716 119.966h-1.032a.516.516 0 000 1.032h1.032a.516.516 0 100-1.032z" class="prefix__cls-1" data-name="Path 49" transform="translate(-421.169 -119.966)"/>
+        </g>
+    </g>
+    <g id="prefix__Group_15" data-name="Group 15" transform="translate(12.393 1.031)">
+        <g id="prefix__Group_14" data-name="Group 14">
+            <path id="prefix__Path_50" d="M393.09 30.142a.516.516 0 00-.729 0l-1.032 1.032a.516.516 0 00.729.729l1.032-1.032a.516.516 0 000-.729z" class="prefix__cls-1" data-name="Path 50" transform="translate(-391.178 -29.991)"/>
+        </g>
+    </g>
+</svg>
