@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Button, FormControl, Dropdown } from "react-bootstrap";
 import { Scrollbars } from "react-custom-scrollbars";
+import { Link } from "react-router-dom";
 import SearchIcon from "../../../images/search.svg";
 import UserIcon from "../../../images/user-icon.png";
 import LampIcon from "../../../images/lamp.svg";
@@ -177,7 +178,11 @@ export const Header = () => {
                 </div>
               </div>
             </Scrollbars>
-            <a href="#" className="configure-btn">
+            {/* <Link to="/notifications" className="configure-btn">
+              <i className="icon-right-arrow"></i>
+              Configure Notification Settings
+            </Link> */}
+            <a href="/notifications" className="configure-btn">
               <i className="icon-right-arrow"></i>
               Configure Notification Settings
             </a>
