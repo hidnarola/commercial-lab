@@ -8,10 +8,20 @@
     background-color: #ffffff;
     line-height: 1;
     padding: 22px 0 22px 30px;
-    font-size: 24.4px;
+    font-size: 24px;
     font-weight: bold;
     color: #7659ff;
     margin: 0 0 50px;
+
+    @media only screen and (max-width: 1600px) {
+      margin: 0 0 30px;     
+    }
+
+    @media only screen and (max-width: 1440px) {
+      font-size: 20px;
+      padding: 20px 0 20px 20px;
+    }
+
   }
 
   .card {
@@ -30,12 +40,20 @@
       border: 0;
       border-radius: 0;
 
+      @media only screen and (max-width: 1600px) {
+        padding: 15px;     
+      }
+
       .search-boxs {
         display: flex;
         flex-wrap: wrap;
         position: relative;
         width: 380px;
         margin-right: auto;
+
+        @media only screen and (max-width: 1600px) {
+          width: 280px;
+        }
 
         .form-control {
           border: 0;
@@ -107,6 +125,11 @@
           padding: 30px;
           border-top: 0;
           border-bottom: solid 1px rgba(112, 112, 112, 0.4);
+
+          @media only screen and (max-width: 1600px) {
+            padding: 15px;
+          }
+
         }
 
         td {
@@ -117,6 +140,11 @@
           padding: 12px 30px;
           color: #666666;
           vertical-align: middle;
+
+          @media only screen and (max-width: 1600px) {
+            padding: 12px 15px;
+            font-size: 14px;
+          }
 
           .form-control {
             border-radius: 6px;
@@ -129,6 +157,13 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
+
+            @media only screen and (max-width: 1600px) {
+              width: 100px;
+              padding: 10px 15px;
+              font-size: 14px;
+            }
+
           }
 
           a {
@@ -137,9 +172,15 @@
             font-size: 16px;
             color: #666;
             text-decoration: none;
+
+            @media only screen and (max-width: 1600px) {
+              font-size: 14px;
+            }
+
             img {
               margin-right: 5px;
             }
+
           }
 
         }

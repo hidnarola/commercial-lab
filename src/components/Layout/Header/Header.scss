@@ -5,12 +5,29 @@ header {
   width: 100%;
   align-content: center;
 
+  @media only screen and (max-width: 1600px) {
+    padding: 24px 0 30px;
+  }
+
+  @media only screen and (max-width: 1366px) {
+    padding: 20px 0 20px;
+  }
+
   h1 {
     font-size: 19px;
     color: #333333;
     line-height: 1;
     margin: auto 60px auto 0;
     font-weight: 700;
+
+    @media only screen and (max-width: 1600px) {
+      margin-right: 20px;           
+    }
+
+    @media only screen and (max-width: 1366px) {
+      font-size: 16px;
+    }
+
   }
 
   .search-boxs {
@@ -18,6 +35,15 @@ header {
     position: relative;
     width: 380px;
     margin-right: 20px;
+
+    @media only screen and (max-width: 1600px) {
+      width: 300px;         
+    }
+
+    @media only screen and (max-width: 1366px) {
+      width: 200px;
+      margin-right: 0;
+    }
 
     .form-control {
       border: 0;
@@ -28,6 +54,10 @@ header {
       line-height: 1;
       font-size: 14px;
       color: #757280;
+
+      @media only screen and (max-width: 1366px) {
+        padding: 15px 42px 15px 20px;
+      }
 
       &:focus {
         box-shadow: none;
@@ -45,6 +75,10 @@ header {
       opacity: 0.3;
       border-left: solid 1px rgba(112, 112, 112, 0.5);
 
+      @media only screen and (max-width: 1366px) {
+        padding: 0 13px;
+      }
+
       img {
         display: block;
       }
@@ -61,6 +95,10 @@ header {
       display: block;
       padding: 0 20px;
       position: relative;
+
+      @media only screen and (max-width: 1366px) {
+        padding: 0 10px;
+      }
 
       &::before {
         content: "";
@@ -89,6 +127,10 @@ header {
         text-decoration: none;
         padding: 0;
 
+        @media only screen and (max-width: 1366px) {
+          font-size: 14px;
+        }
+
         &::after {
           display: none;
         }
@@ -105,6 +147,13 @@ header {
           height: 30px;
           font-size: 28px;
           margin-right: 10px;
+
+          @media only screen and (max-width: 1366px) {
+            font-size: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+          }
         }
       }
     }
@@ -133,6 +182,10 @@ header {
         position: relative;
         color: rgba(51, 51, 51, 0.7);
         font-size: 30px;
+
+        @media only screen and (max-width: 1366px) {
+          font-size: 20px;
+        }
 
         &:not(:disabled):not(.disabled).active:focus,
         &:not(:disabled):not(.disabled):active:focus,
@@ -168,6 +221,10 @@ header {
       display: block;
       margin-left: 30px;
 
+      @media only screen and (max-width: 1366px) {
+        margin-left: 20px;
+      }
+
       .dropdown-toggle {
         background: none;
         padding: 0;
@@ -182,6 +239,10 @@ header {
         position: relative;
         color: rgba(51, 51, 51, 0.7);
         font-size: 30px;
+
+        @media only screen and (max-width: 1366px) {
+          font-size: 20px;
+        }
 
         &:not(:disabled):not(.disabled).active:focus,
         &:not(:disabled):not(.disabled):active:focus,
@@ -217,6 +278,10 @@ header {
         padding: 25px 30px;
         position: relative;
 
+        @media only screen and (max-width: 1366px) {
+          padding: 20px;
+        }
+
         .close-btn {
           position: absolute;
           right: 30px;
@@ -231,6 +296,11 @@ header {
           color: #6145e3;
           line-height: 1;
           margin: 0 0 15px;
+          
+          @media only screen and (max-width: 1366px) {
+            font-size: 16px;
+          }
+
         }
 
         .configure-btn {
@@ -259,6 +329,10 @@ header {
           padding: 15px;
           background: rgba(245, 245, 245, 0.53);
 
+          @media only screen and (max-width: 1366px) {
+            padding: 10px;
+          }
+
           .icon-question {
             width: 18px;
             color: #6145e3;
@@ -279,6 +353,11 @@ header {
               font-size: 19px;
               color: #666666;
               line-height: 1;
+
+              @media only screen and (max-width: 1366px) {
+                font-size: 16px;
+              }
+
             }
 
             p {
@@ -287,6 +366,11 @@ header {
               color: #999999;
               margin: 0 0 15px;
               line-height: 18px;
+
+              @media only screen and (max-width: 1366px) {
+                font-size: 13px;
+              }
+
             }
 
             .detail-box {
@@ -306,6 +390,10 @@ header {
                 border-right: solid 1px rgba(0, 0, 0, 0.26);
                 text-decoration: none;
 
+                @media only screen and (max-width: 1366px) {
+                  font-size: 13px;
+                }
+
                 &:hover {
                   color: #6145e3;
                 }
@@ -323,6 +411,10 @@ header {
                 line-height: 1;
                 text-decoration: none;
 
+                @media only screen and (max-width: 1366px) {
+                  font-size: 13px;
+                }
+
                 &:hover {
                   color: #6145e3;
                 }
@@ -339,6 +431,10 @@ header {
                 color: #666666;
                 line-height: 1;
                 text-decoration: none;
+
+                @media only screen and (max-width: 1366px) {
+                  font-size: 13px;
+                }
 
                 &:hover {
                   color: #6145e3;
@@ -358,6 +454,10 @@ header {
       display: block;
       margin-left: 30px;
 
+      @media only screen and (max-width: 1366px) {
+        margin-left: 20px;
+      }
+
       .dropdown-toggle {
         background: none;
         padding: 0 0 0 30px;
@@ -366,6 +466,10 @@ header {
         flex-wrap: wrap;
         align-items: center;
         border-radius: 0px;
+
+        @media only screen and (max-width: 1366px) {
+          padding: 0 0 0 20px;
+        }
 
         &::before {
           content: "";
@@ -394,6 +498,10 @@ header {
           color: #333333;
           line-height: 16px;
           text-align: right;
+
+          @media only screen and (max-width: 1366px) {
+            font-size: 12px;
+          }
 
           span {
             width: 100%;

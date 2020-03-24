@@ -1,5 +1,87 @@
-.layout {
-    width: calc(100% - 280px);
-    margin-left: auto;
-    padding: 0 60px;
+.main {
+
+    .layout {
+        width: calc(100% - 280px);
+        margin-left: auto;
+        padding: 0 60px;
+    
+        @media only screen and (max-width: 1600px) {
+            padding: 0 30px;            
+        }
+    
+    }
+
+
+    &.open {
+        transition: all 0.5s;
+    
+        nav.sliderbar {
+            width: 100px;
+            transition: all 0.5s;
+            top: 10px;
+    
+            .navbar-toggler {
+                width: 90px;
+                height: 83px;
+                padding: 18px;
+    
+                .navbar-toggler-icon {
+                    background: url(./images/arrow-left.png) center center no-repeat;
+                }
+    
+            }
+    
+            .navbar-brand {
+                padding: 75px 0 20px;
+    
+                h3 {
+                    display: none;
+                }
+    
+            }
+    
+            .navbar-collapse {
+                height: calc(100vh - 154px);
+    
+                ul {
+                    padding: 0 20px;
+    
+                    li {
+    
+                        a.nav-link {
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 30px;
+    
+                            i {
+                                margin: 0;
+                                font-size: 18px;
+                                display: block;
+                                text-align: center;
+                            }
+    
+                            span {
+                                display: none;
+                            }
+    
+                        }
+    
+                    }
+    
+                }
+    
+            }
+    
+        }
+    
+        .layout {
+            width: calc(100% - 100px);
+            transition: all 0.5s;
+        }
+    
+    }
+
 }
+
+
+
