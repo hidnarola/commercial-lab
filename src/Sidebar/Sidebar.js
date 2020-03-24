@@ -7,15 +7,14 @@ import "./Sidebar.scss";
 // import { withRouter } from "react-router-dom";
 
 const Sidebar = props => {
-  const [open, setopen] = useState(false);
-  const { location } = props;
+  const { location,open,handleopen } = props;
   console.log("props,location =>", props);
 
   return (
-    <Navbar expand="true" className={open ? "sliderbar open" : "sliderbar"}>
+    <Navbar expand="true" className="sliderbar">
       <Navbar.Toggle
         aria-controls="basic-navbar-nav"
-        onClick={() => setopen(!open)}
+        onClick={() => handleopen(!open)}
       />
       <Navbar.Brand href="#">
         <img src={LogoIcon} />
