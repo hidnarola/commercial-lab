@@ -10,6 +10,26 @@ import "./Notifications.scss";
 
 const Notifications = () => {
   const [ntofication, setNotification] = useState(null);
+  const [filteredData, setFilteredData] = useState(null);
+
+  const globalSearch = searchBoxValue => {
+    var filteredData = ntofication;
+    if (searchBoxValue.length) {
+      filteredData = ntofication.filter(value => {
+        return (
+          value.type.toLowerCase().includes(searchBoxValue.toLowerCase()) ||
+          value.class.toLowerCase().includes(searchBoxValue.toLowerCase()) ||
+          value.notificationId
+            .toString()
+            .toLowerCase()
+            .includes(searchBoxValue.toLowerCase()) ||
+          value.headline.toLowerCase().includes(searchBoxValue.toLowerCase())
+        );
+      });
+    }
+    setFilteredData(filteredData);
+  };
+
   const getNotificationUrl =
     "https://repo.commercial-lab.com/api/v1/Notifications";
   useEffect(() => {
@@ -24,6 +44,7 @@ const Notifications = () => {
       .then(res => {
         console.log("res => ", res);
         setNotification(res.data.notifications);
+        setFilteredData(res.data.notifications);
         // let data = JSON.stringify(res.data.notifications);
         // console.log("data => ", data);
       })
@@ -31,14 +52,21 @@ const Notifications = () => {
         console.log("err ==>", err);
       });
   }, []);
-  console.log("ntofication", ntofication);
+
+  // const handleSearchForm = e => {
+  //   globalSearch(e.target.value);
+  // };
   return (
     <div className="main-content">
       <div className="title">My Notification Settings</div>
       <div className="card">
         <div className="card-header">
           <Form className="search-boxs">
-            <FormControl type="text" placeholder="Search" />
+            <FormControl
+              type="text"
+              placeholder="Search"
+              onChange={e => globalSearch(e.target.value)}
+            />
             <Button variant="light">
               <img src={SearchIcon} />
             </Button>
