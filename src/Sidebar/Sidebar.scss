@@ -10,6 +10,17 @@ nav.sliderbar {
     height: 100vh;
     border-radius: 0 10px 10px 0;
     display: block;
+    z-index: 3;
+
+    @media only screen and (max-width: 1199px) {
+        width: 100px;
+        transition: all 0.5s;
+        top: 10px;           
+    }
+
+    @media only screen and (max-width: 991px) {
+        left: -100px;
+    }
 
     .navbar-toggler {
         position: fixed;
@@ -27,12 +38,35 @@ nav.sliderbar {
         flex-wrap: wrap;
         outline: 0;
 
+        @media only screen and (max-width: 1199px) {
+            width: 90px;
+            height: 83px;
+            padding: 18px;        
+        }
+
+        @media only screen and (max-width: 991px) {
+            width: 50px;
+            height: 50px;
+            padding: 8px;
+            top: 0;
+            background-size: 100% auto;
+        }
+
         .navbar-toggler-icon {
             display: block;
             width: 30px;
             height: 17px;
             vertical-align: top;
             background: url(../images/toggler-icon.png) left top no-repeat;
+
+            @media only screen and (max-width: 1199px) {
+                background: url(../images/arrow-left.png) center center no-repeat; 
+            }
+            @media only screen and (max-width: 991px) {
+                width: 20px;
+                height: 15px;
+                background-size: 100% auto;
+            }
         }
 
     }
@@ -45,6 +79,10 @@ nav.sliderbar {
         padding: 22px 0;
         justify-content: center;
 
+        @media only screen and (max-width: 1199px) {
+            padding: 75px 0 20px;    
+        }
+
         h3 {
             width: 100%;
             display: block;
@@ -55,6 +93,10 @@ nav.sliderbar {
             text-align: center;
             margin: 12px 0 0 0;
             text-transform: uppercase;
+
+            @media only screen and (max-width: 1199px) {
+                display: none;
+            }
         }
 
     }
@@ -68,11 +110,19 @@ nav.sliderbar {
         overflow: auto;
         height: calc(100vh - 124px);
 
+        @media only screen and (max-width: 1199px) {
+            height: calc(100vh - 154px);
+        }
+
         ul {
             padding: 0 0 0 20px;
             margin: 0;
             list-style: none;
             display: block;
+
+            @media only screen and (max-width: 1199px) {
+                padding: 0 20px;
+            }
 
             li {
                 display: block;
@@ -87,6 +137,12 @@ nav.sliderbar {
                     line-height: 1;
                     border-radius: 30px 0px 0px 30px;
 
+                    @media only screen and (max-width: 1199px) {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 30px;
+                    }
+
                     &.active {
                         background: #fff;
                         color: #000;
@@ -96,6 +152,19 @@ nav.sliderbar {
                         width: 17px;
                         height: 17px;
                         margin-right: 20px;
+
+                        @media only screen and (max-width: 1199px) {
+                            margin: 0;
+                            font-size: 18px;
+                            display: block;
+                            text-align: center;
+                        }
+
+                    }
+                    span {
+                        @media only screen and (max-width: 1199px) {
+                            display: none;
+                        }
                     }
 
                 }

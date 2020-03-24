@@ -49,49 +49,51 @@ const Notifications = () => {
         </div>
 
         <div className="card-body">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Description</th>
-                <th scope="col">Category</th>
-                <th scope="col">Severity</th>
-                <th scope="col">Edit</th>
-                <th scope="col">Delete</th>
-              </tr>
-            </thead>
-            <tbody>
-              {ntofication &&
-                ntofication.map(data => (
-                  <tr>
-                    <td>{data.notificationId}</td>
-                    <td>{data.class}</td>
-                    <td>{data.headline}</td>
-                    <td>Import</td>
-                    <td>
-                      <select name="high" id="high" class="form-control">
-                        <option value="High">High</option>
-                        <option value="Low">Low</option>
-                        <option value="Medium">Medium</option>
-                      </select>
-                    </td>
-                    <td>
-                      <a href="#">
-                        <img src={EditIcon} />
-                        Edit
-                      </a>
-                    </td>
-                    <td>
-                      <a href="#">
-                        <img src={DeleteIcon} />
-                        Delete
-                      </a>
-                    </td>
-                  </tr>
-                ))}
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Severity</th>
+                  <th scope="col">Edit</th>
+                  <th scope="col">Delete</th>
+                </tr>
+              </thead>
+              <tbody>
+                {ntofication &&
+                  ntofication.map(data => (
+                    <tr>
+                      <td>{data.notificationId}</td>
+                      <td>{data.class}</td>
+                      <td>{data.headline}</td>
+                      <td>Import</td>
+                      <td>
+                        <select name="high" id="high" class="form-control">
+                          <option value="High">High</option>
+                          <option value="Low">Low</option>
+                          <option value="Medium">Medium</option>
+                        </select>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <img src={EditIcon} />
+                          Edit
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          <img src={DeleteIcon} />
+                          Delete
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

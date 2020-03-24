@@ -20,7 +20,7 @@ export const Header = () => {
       <div className="reports-list">
         <Dropdown className="reports">
           <Dropdown.Toggle id="reports">
-            <i className="icon-report"></i>Reports
+            <i className="icon-report"></i><span>Reports</span>
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item href="#">1st menu item</Dropdown.Item>
@@ -31,7 +31,7 @@ export const Header = () => {
         </Dropdown>
         <Dropdown className="tools">
           <Dropdown.Toggle id="tools">
-            <i className="icon-tool-setting"></i>Tools & Settings
+            <i className="icon-tool-setting"></i><span>Tools & Settings</span>
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <ul>

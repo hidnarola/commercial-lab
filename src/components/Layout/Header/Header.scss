@@ -13,6 +13,10 @@ header {
     padding: 20px 0 20px;
   }
 
+  @media only screen and (max-width: 991px) {
+    padding: 10px 0;
+  }
+
   h1 {
     font-size: 19px;
     color: #333333;
@@ -26,6 +30,10 @@ header {
 
     @media only screen and (max-width: 1366px) {
       font-size: 16px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      display: none;
     }
 
   }
@@ -43,6 +51,15 @@ header {
     @media only screen and (max-width: 1366px) {
       width: 200px;
       margin-right: 0;
+    }
+
+    @media only screen and (max-width: 991px) {
+      margin-left: 40px;
+    }
+
+    @media only screen and (max-width: 567px) {
+      width: calc(100% - 40px);
+      margin-bottom: 10px;
     }
 
     .form-control {
@@ -141,6 +158,12 @@ header {
           box-shadow: none;
           background: none;
           outline: 0;
+        }
+
+        span {
+          @media only screen and (max-width: 767px) {
+            display: none;
+          }
         }
 
         i {
@@ -280,6 +303,10 @@ header {
 
         @media only screen and (max-width: 1366px) {
           padding: 20px;
+        }
+
+        @media only screen and (max-width: 567px) {
+          width: 270px;
         }
 
         .close-btn {
@@ -458,6 +485,10 @@ header {
         margin-left: 20px;
       }
 
+      @media only screen and (max-width: 991px) {
+        margin-left: 12px;
+      }
+
       .dropdown-toggle {
         background: none;
         padding: 0 0 0 30px;
@@ -469,6 +500,10 @@ header {
 
         @media only screen and (max-width: 1366px) {
           padding: 0 0 0 20px;
+        }
+
+        @media only screen and (max-width: 991px) {
+          padding: 0;
         }
 
         &::before {
@@ -503,6 +538,10 @@ header {
             font-size: 12px;
           }
 
+          @media only screen and (max-width: 991px) {
+            display: none;
+          }
+
           span {
             width: 100%;
             display: block;
@@ -516,6 +555,10 @@ header {
 
       .dropdown-menu {
         width: 345px;
+
+        @media only screen and (max-width: 567px) {
+          width: 270px;
+        }
       }
     }
   }
